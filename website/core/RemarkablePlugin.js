@@ -12,7 +12,6 @@ const renderToPlaceHolder = (divID, code) => {
         var currentTag = document.getElementById("${divID}-script")
         currentTag.parentNode.removeChild(currentTag)
       })()
-      
     </script>
   `;
 }

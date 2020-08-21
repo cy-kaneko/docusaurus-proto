@@ -4,9 +4,12 @@
     "Getting Started": ["getting-started/quick-start"],
     "Components": [
       {
-        "Desktop": [
+        "type": "subcategory",
+        "label": "Desktop",
+        "ids": [
           "components/desktop/attachment",
           "components/desktop/button",
+          "components/desktop/button-test",
           "components/desktop/checkbox",
           "components/desktop/date-time",
           "components/desktop/dialog",
@@ -20,9 +23,13 @@
           "components/desktop/spinner",
           "components/desktop/text",
           "components/desktop/text-area"
-        ],
-        "Mobile": [
-          "components/mobile/button"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Mobile",
+        "ids": [
+          "components/mobile/mobile-button"
         ]
       }
     ]

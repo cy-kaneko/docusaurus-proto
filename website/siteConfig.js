@@ -21,9 +21,10 @@ const siteConfig = {
   organizationName: 'tomokomiyake',
   headerLinks: [
     {doc: 'overview/navigation', label: 'Documentation'},
-    {blog: true, label: 'Blog/Tips'},
+    {doc: 'overview/navigation', label: 'Blog/Tips(pattern A)'},
+    {blog: true, label: 'Blog/Tips(pattern B)'},
     // {page: 'versions', label: 'Version'},
-    {page: 'help', label: 'Help'},
+    // {page: 'help', label: 'Help'},
     {href: 'https://github.com/TomokoMiyake/docusaurus-proto', label: 'GitHub'}, // Need to change to kuc repo
     {search: true},
     {languages: false}
@@ -51,6 +52,7 @@ const siteConfig = {
     defaultLang: 'javascript'
   },
   onPageNav: 'separate',
+  docsSideNavCollapsible: true,
   cleanUrl: true,
   ogImage: 'img/kuc_logo.png',
   twitterImage: 'img/kuc_logo.png',
@@ -60,16 +62,17 @@ const siteConfig = {
     RemarkablePlugins.KUCComponentRenderer,
   ],
   scripts: [
+    // 'https://miyass.github.io/kuc-cdn/kintone-ui-component-dist.js',
     'https://unpkg.com/@kintone/kintone-ui-component@0.3.3/dist/kintone-ui-component.min.js',
-    '/docusaurus-proto/js/extra.js',
+    '/js/extra.js',
     'https://buttons.github.io/buttons.js',
     'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
-    '/docusaurus-proto/js/code-block-button.js',
+    '/js/code-block-button.js',
   ],
   stylesheets: [
     'https://unpkg.com/@kintone/kintone-ui-component@0.3.3/dist/kintone-ui-component.min.css',
-    '/docusaurus-proto/css/custom.css',
-    '/docusaurus-proto/css/code-block-button.css'
+    '/css/custom.css',
+    '/css/code-block-button.css'
   ],
   // Option for Algolia DocSearch(It can be set at production-ready.)
   // algolia: {

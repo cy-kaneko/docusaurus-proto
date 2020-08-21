@@ -9,6 +9,10 @@
         "title": "Attachment",
         "sidebar_label": "Attachment"
       },
+      "components/desktop/button-test": {
+        "title": "ButtonTest",
+        "sidebar_label": "ButtonTest"
+      },
       "components/desktop/button": {
         "title": "Button",
         "sidebar_label": "Button"
@@ -81,6 +85,10 @@
         "title": "Attachment",
         "sidebar_label": "Attachment"
       },
+      "version-0.1.0/components/desktop/version-0.1.0-button-test": {
+        "title": "ButtonTest",
+        "sidebar_label": "ButtonTest"
+      },
       "version-0.1.0/components/desktop/version-0.1.0-button": {
         "title": "Button",
         "sidebar_label": "Button"
@@ -152,8 +160,8 @@
     },
     "links": {
       "Documentation": "Documentation",
-      "Blog/Tips": "Blog/Tips",
-      "Help": "Help",
+      "Blog/Tips(pattern A)": "Blog/Tips(pattern A)",
+      "Blog/Tips(pattern B)": "Blog/Tips(pattern B)",
       "GitHub": "GitHub"
     },
     "categories": {

@@ -8,25 +8,32 @@
     ],
     "Components": [
       {
-        "Desktop": [
-          "components/desktop/attachment",
-          "components/desktop/button",
-          "components/desktop/checkbox",
-          "components/desktop/date-time",
-          "components/desktop/dialog",
-          "components/desktop/dropdown",
-          "components/desktop/editable-table",
-          "components/desktop/icon-button",
-          "components/desktop/multiple-choice",
-          "components/desktop/notify-popup",
-          "components/desktop/radio-button",
-          "components/desktop/readable-table",
-          "components/desktop/spinner",
-          "components/desktop/text",
-          "components/desktop/text-area"
-        ],
-        "Mobile": [
-          "components/mobile/button"
+        "type": "subcategory",
+        "label": "Desktop",
+        "ids": [
+          "version-0.1.0-components/desktop/attachment",
+          "version-0.1.0-components/desktop/button",
+          "version-0.1.0-components/desktop/button-test",
+          "version-0.1.0-components/desktop/checkbox",
+          "version-0.1.0-components/desktop/date-time",
+          "version-0.1.0-components/desktop/dialog",
+          "version-0.1.0-components/desktop/dropdown",
+          "version-0.1.0-components/desktop/editable-table",
+          "version-0.1.0-components/desktop/icon-button",
+          "version-0.1.0-components/desktop/multiple-choice",
+          "version-0.1.0-components/desktop/notify-popup",
+          "version-0.1.0-components/desktop/radio-button",
+          "version-0.1.0-components/desktop/readable-table",
+          "version-0.1.0-components/desktop/spinner",
+          "version-0.1.0-components/desktop/text",
+          "version-0.1.0-components/desktop/text-area"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Mobile",
+        "ids": [
+          "version-0.1.0-components/mobile/mobile-button"
         ]
       }
     ]

@@ -4,7 +4,7 @@ title: Navigation
 sidebar_label: Navigation
 ---
 
-This is the Documentation page navigation.
+こちらは Documentation ページのナビゲーション記事です。
 
 ## Gettign Started
 - [Quick Start](../getting-started/quick-start)
@@ -13,6 +13,7 @@ This is the Documentation page navigation.
 ### Desktop version
 - [Attachment](../components/desktop/attachment)
 - [Button](../components/desktop/button)
+- [ButtonTest](../components/desktop/button-test)
 - [Checkbox](../components/desktop/checkbox)
 - [DateTime](../components/desktop/date-time)
 - [Dialog](../components/desktop/dialog)
