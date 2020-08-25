@@ -5,60 +5,65 @@ sidebar_label: Button
 original_id: button
 ---
 
-## Overview
+# Overview
+
+Button は、ボタンを表示します。
+
+```KUCComponentRenderer {"id":"button_render"}
+var component = new Kuc.Button({
+  text: 'Submit',
+  type: 'submit',
+  visible : true
+});
+```
+
+---
+
+# Specification
+
+## Property
+
+使用できるプロパティの一覧です。プロパティを指定して値を更新することができます。
+
+| Name | Type | Default | Description | Remark |
+| :--- | :--- | :--- | :--- | :--- |
+| className | string | "" | コンポーネントの class 名 |  |
+| id | string | "" | コンポーネントの id 名 |  |
+| text | string | "" | ボタンに表示するテキスト ||
+| type | string | "normal" | ボタンのデザインタイプ | 以下を指定できる  "normal" : Gray(#F7F9FA)  "submit" : Blue(#3498DB)  "alert" : Red(#E74C3C)  "save" : Green(#91C36C) |
+| disabled | boolean | false | コンポーネントの編集可/不可設定 ||
+| visible | boolean | true | コンポーネントの表示/非表示設定 ||
+| onClick | function | null | クリック時のイベントハンドラ設定 | 引数には MouseEvent の event オブジェクトをとる |
 
 ## Constructor
-**Parameter**
 
-| Name| Type| Required| Description |
-| --- | --- | --- | --- |
-|options|Object|No|The object contains params of constructor.|
-|options.text|String|No|Text will be displayed in button.|
-|options.type|String|No|Style of the button: <ul><li> 'normal' </li><li> 'submit' </li></ul> Default value: 'normal'|
-|options.isDisabled|Boolean|No|The button will be disabled. <br> Default value: 'false'|
-|options.isVisible|Boolean|No|The button will be visible. <br>  Default value: 'true'|
+Dropdown(options)  
+使用できるコンストラクタの一覧です。
 
-<details class="tab-container" open>
-<Summary>View source</Summary>
+### Parameter
 
-**Javascript**
+| Name | Type | Default | Description | Remark |
+| :--- | :--- | :--- | :--- | :--- |
+| options | object | {} | コンポーネントのプロパティを含む JSON オブジェクト | options 内の値は必須でない |
+
+---
+
+# Sample Code
+
+全てのパラメータを指定した場合のサンプルコードです。
+
 ```javascript
+var header = kintone.app.getHeaderMenuSpaceElement();
 var button = new kintoneUIComponent.Button({
     text: 'Submit',
-    type: 'submit'
+    type: 'submit',
+    className: 'options-class',
+    id: 'options-id',
+    visible: true,
+    disabled: false,
+    onClick: function(event) {
+      console.log(event);
+    }
 });
-```
-</details>
-
-## Methods
-### render()
-Get dom element of component.
-
-**Parameter**
-
-None
-
-**Returns**
-
-DOM element
-
-<details class="tab-container">
-<Summary>View source</Summary>
-
-**Javascript**
-```javascript sandbox_kuc-button-js-m4ox583098
-var button = new kintoneUIComponent.Button({
-    text: 'Submit', 
-    type: "submit"
-});
-var body = document.getElementsByTagName("BODY")[0];
-body.appendChild(button.render());
-```
-</details>
-
-```KUCComponentRenderer {"id":"btn_render"}
-var component = new kintoneUIComponent.Button({
-    text: 'Submit',
-    type: 'submit'
-});
+header.appendChild(button);
 ```

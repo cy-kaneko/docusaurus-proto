@@ -1,22 +1,22 @@
 ---
-id: version-0.1.0-spinner
-title: Spinner
-sidebar_label: Spinner
-original_id: spinner
+id: version-0.1.0-notification
+title: Notification
+sidebar_label: Notification
+original_id: notification
 ---
 
 # Overview
 
-Spinner は、ローディングスピナーを表示します。
+Notification は、ポップアップの通知を表示します。
 
-```KUCComponentRenderer {"id":"spinner_render"}
-var component = new Kuc.Spinner({
-  text: 'now loading...'
-});
+```KUCComponentRenderer {"id":"notification_render"}
 var buttonComponent = new Kuc.Button({
   text: 'Open',
   type: 'submit',
   visible : true
+});
+var component = new Kuc.Notification({
+  text:  'Error occurred!'
 });
 buttonComponent.addEventListener('click', function() {
   component.open();
@@ -31,14 +31,13 @@ buttonComponent.addEventListener('click', function() {
 
 | Name | Type | Default | Description | Remark |
 | :--- | :--- | :--- | :--- | :--- |
-| text | string | "" | ローダーアイコン下部に表示するテキスト | text が未指定もしくは空文字の場合*は、初期値を表示する |
-
-\* textが未指定もしくは空文字の場合は、アクセシビリティを考慮して、visually-hidden classを
-付与し、"now loading…" の文言を視覚的に見えない状態で表示します
+| className | string | "" | コンポーネントの class 名 ||
+| text | string | "" | 表示するテキスト ||
+| type | string | "danger" | 背景色 | 以下を指定できる<br>"danger" : Red(#e74c3c)<br>"info" : Blue(#3498db)<br>"success" : Green(#91c36c) |
 
 ## Constructor
 
-Spinner(options)
+Notification(options)
 使用できるコンストラクタの一覧です。
 
 ### Parameter
@@ -47,10 +46,11 @@ Spinner(options)
 | options | object | {} | コンポーネントのプロパティを含む JSON オブジェクト | options 内の値は必須でない |
 
 ## Method
+
 使用できるメソッドの一覧です。
 
 ### open()
-コンポーネントを表示する
+Notification を表示する
 
 #### Parameter
 none
@@ -59,7 +59,7 @@ none
 none
 
 ### close()
-コンポーネントを非表示にする
+Notification を非表示にする
 
 #### Parameter
 none
@@ -73,9 +73,11 @@ none
 全てのパラメータを指定した場合のサンプルコードです。
 
 ```javascript
-var spinner = new kintoneUIComponent.Spinner({
-  text: 'now loading...'
+var notification = new kintoneUIComponent.Notification({
+  text:  'Error occurred!',
+  type: 'danger',
+  className: 'options-class'
 });
-spinner.open();
-spinner.close();
+notification.open();
+notification.close();
 ```

@@ -3,15 +3,11 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "",
+    "tagline": "It will support your UI customization project.",
     "docs": {
-      "components/desktop/attachment": {
-        "title": "Attachment",
-        "sidebar_label": "Attachment"
-      },
-      "components/desktop/button-test": {
-        "title": "ButtonTest",
-        "sidebar_label": "ButtonTest"
+      "components/desktop/button-v0": {
+        "title": "Button v0",
+        "sidebar_label": "Button v0"
       },
       "components/desktop/button": {
         "title": "Button",
@@ -21,10 +17,6 @@
         "title": "Checkbox",
         "sidebar_label": "Checkbox"
       },
-      "components/desktop/date-time": {
-        "title": "DateTime",
-        "sidebar_label": "DateTime"
-      },
       "components/desktop/dialog": {
         "title": "Dialog",
         "sidebar_label": "Dialog"
@@ -33,45 +25,49 @@
         "title": "Dropdown",
         "sidebar_label": "Dropdown"
       },
-      "components/desktop/editable-table": {
-        "title": "EditableTable",
-        "sidebar_label": "EditableTable"
+      "components/desktop/multichoice": {
+        "title": "MultiChoice",
+        "sidebar_label": "MultiChoice"
       },
-      "components/desktop/icon-button": {
-        "title": "IconButton",
-        "sidebar_label": "IconButton"
-      },
-      "components/desktop/multiple-choice": {
-        "title": "MultipleChoice",
-        "sidebar_label": "MultipleChoice"
-      },
-      "components/desktop/notify-popup": {
-        "title": "NotifyPopup",
-        "sidebar_label": "NotifyPopup"
+      "components/desktop/notification": {
+        "title": "Notification",
+        "sidebar_label": "Notification"
       },
       "components/desktop/radio-button": {
         "title": "RadioButton",
         "sidebar_label": "RadioButton"
       },
-      "components/desktop/readable-table": {
-        "title": "ReadableTable",
-        "sidebar_label": "ReadableTable"
+      "components/desktop/readonly-table": {
+        "title": "ReadOnlyTable",
+        "sidebar_label": "ReadOnlyTable"
       },
       "components/desktop/spinner": {
         "title": "Spinner",
         "sidebar_label": "Spinner"
       },
-      "components/desktop/text-area": {
-        "title": "TextArea",
-        "sidebar_label": "TextArea"
+      "components/desktop/table": {
+        "title": "Table",
+        "sidebar_label": "Table"
       },
       "components/desktop/text": {
         "title": "Text",
         "sidebar_label": "Text"
       },
+      "components/desktop/textarea": {
+        "title": "TextArea",
+        "sidebar_label": "TextArea"
+      },
       "components/mobile/mobile-button": {
         "title": "MobileButton",
         "sidebar_label": "MobileButton"
+      },
+      "components/mobile/mobile-checkbox": {
+        "title": "MobileCheckbox",
+        "sidebar_label": "MobileCheckbox"
+      },
+      "components/mobile/mobile-text": {
+        "title": "MobileText",
+        "sidebar_label": "MobileText"
       },
       "getting-started/quick-start": {
         "title": "Quick Start",
@@ -81,13 +77,17 @@
         "title": "Navigation",
         "sidebar_label": "Navigation"
       },
-      "version-0.1.0/components/desktop/version-0.1.0-attachment": {
-        "title": "Attachment",
-        "sidebar_label": "Attachment"
+      "tips-overview/tips-navigation": {
+        "title": "Navigation",
+        "sidebar_label": "Navigation"
       },
-      "version-0.1.0/components/desktop/version-0.1.0-button-test": {
-        "title": "ButtonTest",
-        "sidebar_label": "ButtonTest"
+      "tips/installation": {
+        "title": "Installation",
+        "sidebar_label": "Installation"
+      },
+      "version-0.1.0/components/desktop/version-0.1.0-button-v0": {
+        "title": "Button v0",
+        "sidebar_label": "Button v0"
       },
       "version-0.1.0/components/desktop/version-0.1.0-button": {
         "title": "Button",
@@ -97,10 +97,6 @@
         "title": "Checkbox",
         "sidebar_label": "Checkbox"
       },
-      "version-0.1.0/components/desktop/version-0.1.0-date-time": {
-        "title": "DateTime",
-        "sidebar_label": "DateTime"
-      },
       "version-0.1.0/components/desktop/version-0.1.0-dialog": {
         "title": "Dialog",
         "sidebar_label": "Dialog"
@@ -109,45 +105,49 @@
         "title": "Dropdown",
         "sidebar_label": "Dropdown"
       },
-      "version-0.1.0/components/desktop/version-0.1.0-editable-table": {
-        "title": "EditableTable",
-        "sidebar_label": "EditableTable"
+      "version-0.1.0/components/desktop/version-0.1.0-multichoice": {
+        "title": "MultiChoice",
+        "sidebar_label": "MultiChoice"
       },
-      "version-0.1.0/components/desktop/version-0.1.0-icon-button": {
-        "title": "IconButton",
-        "sidebar_label": "IconButton"
-      },
-      "version-0.1.0/components/desktop/version-0.1.0-multiple-choice": {
-        "title": "MultipleChoice",
-        "sidebar_label": "MultipleChoice"
-      },
-      "version-0.1.0/components/desktop/version-0.1.0-notify-popup": {
-        "title": "NotifyPopup",
-        "sidebar_label": "NotifyPopup"
+      "version-0.1.0/components/desktop/version-0.1.0-notification": {
+        "title": "Notification",
+        "sidebar_label": "Notification"
       },
       "version-0.1.0/components/desktop/version-0.1.0-radio-button": {
         "title": "RadioButton",
         "sidebar_label": "RadioButton"
       },
-      "version-0.1.0/components/desktop/version-0.1.0-readable-table": {
-        "title": "ReadableTable",
-        "sidebar_label": "ReadableTable"
+      "version-0.1.0/components/desktop/version-0.1.0-readonly-table": {
+        "title": "ReadOnlyTable",
+        "sidebar_label": "ReadOnlyTable"
       },
       "version-0.1.0/components/desktop/version-0.1.0-spinner": {
         "title": "Spinner",
         "sidebar_label": "Spinner"
       },
-      "version-0.1.0/components/desktop/version-0.1.0-text-area": {
-        "title": "TextArea",
-        "sidebar_label": "TextArea"
+      "version-0.1.0/components/desktop/version-0.1.0-table": {
+        "title": "Table",
+        "sidebar_label": "Table"
       },
       "version-0.1.0/components/desktop/version-0.1.0-text": {
         "title": "Text",
         "sidebar_label": "Text"
       },
+      "version-0.1.0/components/desktop/version-0.1.0-textarea": {
+        "title": "TextArea",
+        "sidebar_label": "TextArea"
+      },
       "version-0.1.0/components/mobile/version-0.1.0-mobile-button": {
         "title": "MobileButton",
         "sidebar_label": "MobileButton"
+      },
+      "version-0.1.0/components/mobile/version-0.1.0-mobile-checkbox": {
+        "title": "MobileCheckbox",
+        "sidebar_label": "MobileCheckbox"
+      },
+      "version-0.1.0/components/mobile/version-0.1.0-mobile-text": {
+        "title": "MobileText",
+        "sidebar_label": "MobileText"
       },
       "version-0.1.0/getting-started/version-0.1.0-quick-start": {
         "title": "Quick Start",
@@ -156,18 +156,27 @@
       "version-0.1.0/overview/version-0.1.0-navigation": {
         "title": "Navigation",
         "sidebar_label": "Navigation"
+      },
+      "version-0.1.0/tips-overview/version-0.1.0-tips-navigation": {
+        "title": "Navigation",
+        "sidebar_label": "Navigation"
+      },
+      "version-0.1.0/tips/version-0.1.0-installation": {
+        "title": "Installation",
+        "sidebar_label": "Installation"
       }
     },
     "links": {
       "Documentation": "Documentation",
-      "Blog/Tips(pattern A)": "Blog/Tips(pattern A)",
-      "Blog/Tips(pattern B)": "Blog/Tips(pattern B)",
+      "Tips": "Tips",
+      "Blog": "Blog",
       "GitHub": "GitHub"
     },
     "categories": {
       "Overview": "Overview",
       "Getting Started": "Getting Started",
-      "Components": "Components"
+      "Components": "Components",
+      "Tips": "Tips"
     }
   },
   "pages-strings": {

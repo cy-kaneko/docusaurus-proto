@@ -5,29 +5,35 @@ sidebar_label: Navigation
 original_id: navigation
 ---
 
-こちらは Documentation ページのナビゲーション記事です。
+こちらは Documentation ページのナビゲーションです。
 
 ## Gettign Started
 - [Quick Start](../getting-started/quick-start)
 
 ## Components
+
+| Desktop version | Mobile version |
+| :--- | :--- |
+| [Button](../components/desktop/button) | [MobileButton](../components/mobile/mobile-button) |
+| [Checkbox](../components/desktop/checkbox) | [MobileCheckbox](../components/mobile/mobile-checkbox) |
+| [Dropdown](../components/desktop/dropdown) | Coming soon...! |
+
+## Components
 ### Desktop version
-- [Attachment](../components/desktop/attachment)
 - [Button](../components/desktop/button)
-- [ButtonTest](../components/desktop/button-test)
 - [Checkbox](../components/desktop/checkbox)
-- [DateTime](../components/desktop/date-time)
 - [Dialog](../components/desktop/dialog)
 - [Dropdown](../components/desktop/dropdown)
-- [EditableTable](../components/desktop/editable-table)
-- [IconButton](../components/desktop/icon-button)
-- [MultipleChoice](../components/desktop/multiple-choice)
-- [NotifyPopup](../components/desktop/notify-popup)
+- [Table](../components/desktop/table)
+- [MultiChoice](../components/desktop/multichoice)
+- [Notification](../components/desktop/notification)
 - [RadioButton](../components/desktop/radio-button)
-- [ReadableTable](../components/desktop/readable-table)
+- [ReadOnlyTable](../components/desktop/readonly-table)
 - [Spinner](../components/desktop/spinner)
 - [Text](../components/desktop/text)
-- [TextArea](../components/desktop/text-area)
+- [TextArea](../components/desktop/textarea)
 
 ### Mobile version
 - [MobileButton](../components/mobile/mobile-button)
+- [MobileCheckbox](../components/mobile/mobile-checkbox)
+- [MobileText](../components/mobile/mobile-text)

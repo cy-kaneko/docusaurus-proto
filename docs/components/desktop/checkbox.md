@@ -4,47 +4,95 @@ title: Checkbox
 sidebar_label: Checkbox
 ---
 
-## Overview
+# Overview
+
+Checkbox は、複数選択のチェックボックスを表示します。
+
+```KUCComponentRenderer {"id":"checkbox_render"}
+var component = new Kuc.Checkbox({
+  value : ['Orange'],
+  visible : true,
+  items : [
+    {
+      label: 'orange',
+      value: 'Orange'
+    },
+    {
+      label: 'apple',
+      value: 'Apple'
+    },
+  ]
+});
+```
+
+---
+
+# Specification
+
+## Property
+
+使用できるプロパティの一覧です。プロパティを指定して値を更新することができます。
+
+| Name | Type | Default | Description | Remark |
+| :--- | :--- | :--- | :--- | :--- |
+| className | string | "" | コンポーネントの class 名 ||
+| error | string | "" | エラーに表示するテキスト | 未指定、あるいは空文字 の場合、error は表示されない |
+| id | string | "" | コンポーネントの id 名 ||
+| itemLayout | string | "horizontal" | 選択肢の並べ方 | 以下を指定できる<br>"horizontal" : 横並び<br>"vertical" : 縦並び |
+| label | string | "" | コンポーネントの説明ラベル | 未指定、あるいは空文字の場合、label は表示されない |
+| borderVisible | boolean | true | 選択肢を囲う枠線の表示/非表示設定 ||
+| disabled | boolean | false | コンポーネントの選択可/不可設定 ||
+| requiredIcon | boolean | false | コンポーネントの必須アイコン表示/非表示設定 ||
+| visible | boolean | true | コンポーネントの表示/非表示設定 ||
+| items | Array\<Item\> | [] | 表示する選択肢一覧 | items が配列ではない場合、エラーを出力する |
+| Item.label | string | null | 各選択肢のテキスト | Item.label が未指定の場合、UI 上は Item.value の値が表示される |
+| Item.value | string | null | 各選択肢の値 | Item.value の値が重複した場合、エラーを出力する |
+| value | Array\<string\> | "" | 選択されている値 | value が配列以外の時、エラーを出力する<br>配列内の値が重複した場合、エラーを出力する |
+| onChange | function | null | 値が変更されたときのイベントハンドラ設定 | 引数には MouseEvent と KeyboardEvent の event オブジェクトをとる |
 
 ## Constructor
 
-**Parameter**
+Checkbox(options)
+使用できるコンストラクタの一覧です。
 
-| Name| Type| Required| Description |
-| --- | --- | --- | --- |
-|options|Object|No|The object contains params of constructor.|
-|options.items|Array&lt;Object&gt;|No|List of items which will be displayed on checkbox.|
-|options.items[].value|String|Yes|String value of item <br> If the value is duplicate, the error message will be displayed|
-|options.items[].label|String|No|	String label of item|
-|options.items[].isDisabled|Boolean|No|Indicate item will be disabled when display. Default value is false.|
-|options.value|Array<String>|No|List of checked item.|
-|options.isDisabled|Boolean|No|The checkBox will be disabled. <br> Default value: 'false'|
-|options.isVisible|Boolean|No|The checkBox will be visible. <br> Default value: 'true'|
+### Parameter
 
-<details class="tab-container" open>
-<Summary>View source</Summary>
+| Name | Type | Default | Description | Remark |
+| :--- | :--- | :--- | :--- | :--- |
+| options | object | {} | コンポーネントのプロパティを含む JSON オブジェクト | options 内の値は必須でない |
 
-**Javascript**
+---
+
+# Sample Code
+
+全てのパラメータを指定した場合のサンプルコードです。
+
 ```javascript
-var checkbox = new kintoneUIComponent.CheckBox ({
-       items: [
-            {
-                label: 'Orange',
-                value: 'Orange',
-                isDisabled: false
-            },
-            {
-                label: 'Banana',
-                value: 'Banana',
-                isDisabled: true
-            },
-            {
-                label: 'Lemon',
-                value: 'Lemon',
-                isDisabled: true
-            },
-     ],
-     value: ['Orange', 'Banana']
+var space = kintone.app.record.getSpaceElement('space');
+var checkbox = new kintoneUIComponent.Checkbox({
+  label: 'Fruit',
+  requiredIcon: true,
+  items: [
+    { 
+      label: 'orange',
+      value: 'Orange'
+    },
+    { 
+      label: 'apple',
+      value: 'Apple'
+    }
+  ],
+  value: ['Orange'],
+  itemLayout: 'horizontal',
+  error: 'Error occurred!',
+  className: 'options-class',
+  id: 'options-id',
+  visible: true,
+  disabled: false,
+  borderVisible: true,
+  onChange: function(event) {
+    console.log(event);
+  } 
 });
+space.appendChild(checkbox);
 ```
-</details>

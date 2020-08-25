@@ -63,15 +63,8 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
-          <PromoSection>
-            <Button href={docUrl('overview/navigation.html')}>Navigation</Button>
-            <Button href={docUrl('getting-started/quick-start.html')}>Quick Start</Button>
-            <Button href={docUrl('components/attachment.html')}>Components</Button>
-            <Button href={versionUrl('versions.html')}>Versions</Button>
-          </PromoSection>
         </div>
       </SplashContainer>
     );
@@ -88,6 +81,7 @@ class Index extends React.Component {
         padding={['bottom', 'top']}
         id={props.id}
         background={props.background}>
+        <h2 align="center">Use Cases</h2>
         <GridBlock
           align="center"
           contents={props.children}
@@ -103,31 +97,40 @@ class Index extends React.Component {
       </div>
     );
 
-    const Features = () => (
-      <Block id="feature" layout="fourColumn">
+    const UseCases = () => (
+      <Block id="usecase" layout="twoColumn">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
-            imageAlign: 'top',
-            title: 'Feature One',
+            // content: '',
+            image: `${baseUrl}img/kuc_demo_edit.png`,
+            imageAlign: 'bottom',
+            // title: 'Use Case One',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
-            imageAlign: 'top',
-            title: 'Feature Two',
-          },
+            // content: '',
+            image: `${baseUrl}img/kuc_demo_index.png`,
+            imageAlign: 'bottom',
+            // title: 'Use Case Two',
+          }
         ]}
       </Block>
+    );
+
+    const Description = () => (
+      <div
+        className="descriptionSection"
+        style={{textAlign: 'center'}}>
+        <span>※ サポートポリシーはこちらをご確認ください。</span>
+      </div>
     );
 
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Features />
+          <UseCases />
           <FeatureCallout />
+          <Description />
         </div>
       </div>
     );

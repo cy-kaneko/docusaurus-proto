@@ -4,19 +4,77 @@ title: Spinner
 sidebar_label: Spinner
 ---
 
-## Overview
+# Overview
+
+Spinner は、ローディングスピナーを表示します。
+
+```KUCComponentRenderer {"id":"spinner_render"}
+var component = new Kuc.Spinner({
+  text: 'now loading...'
+});
+var buttonComponent = new Kuc.Button({
+  text: 'Open',
+  type: 'submit',
+  visible : true
+});
+buttonComponent.addEventListener('click', function() {
+  component.open();
+});
+```
+---
+# Specification
+
+## Property
+
+使用できるプロパティの一覧です。プロパティを指定して値を更新することができます。
+
+| Name | Type | Default | Description | Remark |
+| :--- | :--- | :--- | :--- | :--- |
+| text | string | "" | ローダーアイコン下部に表示するテキスト | text が未指定もしくは空文字の場合*は、初期値を表示する |
+
+\* textが未指定もしくは空文字の場合は、アクセシビリティを考慮して、visually-hidden classを
+付与し、"now loading…" の文言を視覚的に見えない状態で表示します
 
 ## Constructor
 
-**Parameter**
+Spinner(options)
+使用できるコンストラクタの一覧です。
 
-None
+### Parameter
+| Name | Type | Default | Description | Remark |
+| :--- | :--- | :--- | :--- | :--- |
+| options | object | {} | コンポーネントのプロパティを含む JSON オブジェクト | options 内の値は必須でない |
 
-<details class="tab-container" open>
-<Summary>View source</Summary>
+## Method
+使用できるメソッドの一覧です。
 
-**Javascript**
+### open()
+コンポーネントを表示する
+
+#### Parameter
+none
+
+#### Return
+none
+
+### close()
+コンポーネントを非表示にする
+
+#### Parameter
+none
+
+#### Return
+none
+
+---
+# Sample Code
+
+全てのパラメータを指定した場合のサンプルコードです。
+
+```javascript
+var spinner = new kintoneUIComponent.Spinner({
+  text: 'now loading...'
+});
+spinner.open();
+spinner.close();
 ```
-var spinner = new kintoneUIComponent.Spinner();
-```
-</details>

@@ -7,7 +7,7 @@ const renderToPlaceHolder = (divID, code) => {
           document.getElementById('${divID}').append(kucContainer)
         }
         else if (typeof component !== 'undefined') {
-          document.getElementById('${divID}').append(component.render())
+          document.getElementById('${divID}').append(component)
         }
         var currentTag = document.getElementById("${divID}-script")
         currentTag.parentNode.removeChild(currentTag)

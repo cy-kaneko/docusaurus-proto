@@ -11,31 +11,38 @@
         "type": "subcategory",
         "label": "Desktop",
         "ids": [
-          "version-0.1.0-components/desktop/attachment",
           "version-0.1.0-components/desktop/button",
-          "version-0.1.0-components/desktop/button-test",
+          "version-0.1.0-components/desktop/button-v0",
           "version-0.1.0-components/desktop/checkbox",
-          "version-0.1.0-components/desktop/date-time",
           "version-0.1.0-components/desktop/dialog",
           "version-0.1.0-components/desktop/dropdown",
-          "version-0.1.0-components/desktop/editable-table",
-          "version-0.1.0-components/desktop/icon-button",
-          "version-0.1.0-components/desktop/multiple-choice",
-          "version-0.1.0-components/desktop/notify-popup",
+          "version-0.1.0-components/desktop/multichoice",
+          "version-0.1.0-components/desktop/notification",
           "version-0.1.0-components/desktop/radio-button",
-          "version-0.1.0-components/desktop/readable-table",
+          "version-0.1.0-components/desktop/readonly-table",
           "version-0.1.0-components/desktop/spinner",
+          "version-0.1.0-components/desktop/table",
           "version-0.1.0-components/desktop/text",
-          "version-0.1.0-components/desktop/text-area"
+          "version-0.1.0-components/desktop/textarea"
         ]
       },
       {
         "type": "subcategory",
         "label": "Mobile",
         "ids": [
-          "version-0.1.0-components/mobile/mobile-button"
+          "version-0.1.0-components/mobile/mobile-button",
+          "version-0.1.0-components/mobile/mobile-checkbox",
+          "version-0.1.0-components/mobile/mobile-text"
         ]
       }
+    ]
+  },
+  "version-0.1.0-tips": {
+    "Overview": [
+      "version-0.1.0-tips-overview/tips-navigation"
+    ],
+    "Tips": [
+      "version-0.1.0-tips/installation"
     ]
   }
 }

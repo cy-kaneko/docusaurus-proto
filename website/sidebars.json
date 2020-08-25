@@ -7,31 +7,38 @@
         "type": "subcategory",
         "label": "Desktop",
         "ids": [
-          "components/desktop/attachment",
           "components/desktop/button",
-          "components/desktop/button-test",
+          "components/desktop/button-v0",
           "components/desktop/checkbox",
-          "components/desktop/date-time",
           "components/desktop/dialog",
           "components/desktop/dropdown",
-          "components/desktop/editable-table",
-          "components/desktop/icon-button",
-          "components/desktop/multiple-choice",
-          "components/desktop/notify-popup",
+          "components/desktop/multichoice",
+          "components/desktop/notification",
           "components/desktop/radio-button",
-          "components/desktop/readable-table",
+          "components/desktop/readonly-table",
           "components/desktop/spinner",
+          "components/desktop/table",
           "components/desktop/text",
-          "components/desktop/text-area"
+          "components/desktop/textarea"
         ]
       },
       {
         "type": "subcategory",
         "label": "Mobile",
         "ids": [
-          "components/mobile/mobile-button"
+          "components/mobile/mobile-button",
+          "components/mobile/mobile-checkbox",
+          "components/mobile/mobile-text"
         ]
       }
+    ]
+  },
+  "tips": {
+    "Overview": [
+      "tips-overview/tips-navigation"
+    ],
+    "Tips": [
+      "tips/installation"
     ]
   }
 }

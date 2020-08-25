@@ -8,8 +8,8 @@
 const RemarkablePlugins = require('./core/RemarkablePlugin');
 
 const siteConfig = {
-  title: 'kintone UI Component supports you to create cool kintone app.', // Title for your website.
-  tagline: '',
+  title: 'Be a smart kintone developer with kintone UI Component.', // Title for your website.
+  tagline: 'It will support your UI customization project.',
   // For GitHub Pages hosting
   // url: 'https://tomokomiyake.github.io',
   // baseUrl: '/docusaurus-proto/',
@@ -21,9 +21,8 @@ const siteConfig = {
   organizationName: 'tomokomiyake',
   headerLinks: [
     {doc: 'overview/navigation', label: 'Documentation'},
-    {doc: 'overview/navigation', label: 'Blog/Tips(pattern A)'},
-    {blog: true, label: 'Blog/Tips(pattern B)'},
-    // {page: 'versions', label: 'Version'},
+    {doc: 'tips-overview/tips-navigation', label: 'Tips'},
+    {blog: true, label: 'Blog'},
     // {page: 'help', label: 'Help'},
     {href: 'https://github.com/TomokoMiyake/docusaurus-proto', label: 'GitHub'}, // Need to change to kuc repo
     {search: true},
@@ -33,8 +32,8 @@ const siteConfig = {
   footerIcon: 'img/kuc_box_white.png',
   favicon: 'img/kuc_box_yellow.png',
   colors: {
-    primaryColor: '#2b3137', //'#03A9F4', '#000', '#609f6f',
-    secondaryColor: '#03A9F4', //'#3498DB', '#2b3137', '#333333', '#24292e', '#436f4d',
+    primaryColor: '#2b3137',
+    secondaryColor: '#03A9F4',
   },
   fonts: {
     myFont: [
@@ -58,22 +57,25 @@ const siteConfig = {
   twitterImage: 'img/kuc_logo.png',
   disableHeaderTitle: true,
   scrollToTop: true,
+  enableUpdateTime: true,
+  blogSidebarCount: 'ALL',
   markdownPlugins: [
     RemarkablePlugins.KUCComponentRenderer,
   ],
   scripts: [
-    // 'https://miyass.github.io/kuc-cdn/kintone-ui-component-dist.js',
-    'https://unpkg.com/@kintone/kintone-ui-component@0.3.3/dist/kintone-ui-component.min.js',
+    'https://miyass.github.io/kuc-cdn/kuc.min.js',
+    // 'https://unpkg.com/@kintone/kintone-ui-component@0.3.3/dist/kintone-ui-component.min.js',
     '/js/extra.js',
     'https://buttons.github.io/buttons.js',
     'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
     '/js/code-block-button.js',
   ],
   stylesheets: [
-    'https://unpkg.com/@kintone/kintone-ui-component@0.3.3/dist/kintone-ui-component.min.css',
+    // 'https://unpkg.com/@kintone/kintone-ui-component@0.3.3/dist/kintone-ui-component.min.css',
     '/css/custom.css',
     '/css/code-block-button.css'
   ],
+  // gaTrackingId: '',
   // Option for Algolia DocSearch(It can be set at production-ready.)
   // algolia: {
   //   apiKey: '',
