@@ -69,17 +69,13 @@
         "title": "MobileText",
         "sidebar_label": "MobileText"
       },
+      "components/storybook-iframe-test": {
+        "title": "Storybook iframe test",
+        "sidebar_label": "Storybook iframe test"
+      },
       "getting-started/quick-start": {
         "title": "Quick Start",
         "sidebar_label": "Quick Start"
-      },
-      "overview/navigation": {
-        "title": "Navigation",
-        "sidebar_label": "Navigation"
-      },
-      "tips-overview/tips-navigation": {
-        "title": "Navigation",
-        "sidebar_label": "Navigation"
       },
       "tips/installation": {
         "title": "Installation",
@@ -149,17 +145,13 @@
         "title": "MobileText",
         "sidebar_label": "MobileText"
       },
+      "version-0.1.0/components/version-0.1.0-storybook-iframe-test": {
+        "title": "Storybook iframe test",
+        "sidebar_label": "Storybook iframe test"
+      },
       "version-0.1.0/getting-started/version-0.1.0-quick-start": {
         "title": "Quick Start",
         "sidebar_label": "Quick Start"
-      },
-      "version-0.1.0/overview/version-0.1.0-navigation": {
-        "title": "Navigation",
-        "sidebar_label": "Navigation"
-      },
-      "version-0.1.0/tips-overview/version-0.1.0-tips-navigation": {
-        "title": "Navigation",
-        "sidebar_label": "Navigation"
       },
       "version-0.1.0/tips/version-0.1.0-installation": {
         "title": "Installation",
@@ -173,7 +165,6 @@
       "GitHub": "GitHub"
     },
     "categories": {
-      "Overview": "Overview",
       "Getting Started": "Getting Started",
       "Components": "Components",
       "Tips": "Tips"

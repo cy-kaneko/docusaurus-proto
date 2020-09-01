@@ -82,6 +82,9 @@ class Index extends React.Component {
         id={props.id}
         background={props.background}>
         <h2 align="center">Use Cases</h2>
+        <div align="center">
+          <span>kintone UI Component は、kintone プラグイン設定画面やカスタマイズビュー、kintone 一覧画面のヘッダーメニュー要素など取得できる要素に配置することで、kintone ライクな見た目を実現することができます。</span>
+        </div>
         <GridBlock
           align="center"
           contents={props.children}

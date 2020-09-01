@@ -20,8 +20,8 @@ const siteConfig = {
   projectName: 'docusaurus-proto',
   organizationName: 'tomokomiyake',
   headerLinks: [
-    {doc: 'overview/navigation', label: 'Documentation'},
-    {doc: 'tips-overview/tips-navigation', label: 'Tips'},
+    {doc: 'getting-started/quick-start', label: 'Documentation'},
+    {doc: 'tips/installation', label: 'Tips'},
     {blog: true, label: 'Blog'},
     // {page: 'help', label: 'Help'},
     {href: 'https://github.com/TomokoMiyake/docusaurus-proto', label: 'GitHub'}, // Need to change to kuc repo

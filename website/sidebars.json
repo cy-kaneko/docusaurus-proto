@@ -1,8 +1,8 @@
 {
   "docs": {
-    "Overview": ["overview/navigation"],
     "Getting Started": ["getting-started/quick-start"],
     "Components": [
+      "components/storybook-iframe-test",
       {
         "type": "subcategory",
         "label": "Desktop",
@@ -34,9 +34,6 @@
     ]
   },
   "tips": {
-    "Overview": [
-      "tips-overview/tips-navigation"
-    ],
     "Tips": [
       "tips/installation"
     ]
