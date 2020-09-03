@@ -33,12 +33,16 @@ a {
 }
 
 /* css for the top page */
+.mainContainer {
+    /* background-color: #2b3137; */
+    border-top: solid 1px #ffffff;
+}
 .homeContainer {
     background-color: #2b3137;
     padding: 48px;
 }
 .projectTitle {
-    color: #fff;
+    color: #ffffff;
 }
 .container.paddingTop {
     padding-top: 0px;
@@ -46,36 +50,42 @@ a {
 .container.paddingBottom {
     padding-bottom: 0px;
 }
-/* .button {
-    color: #fff;
-    border-color: #fff;
+.button {
+    color: #ffffff;
+    border-color: #ffffff;
 }
 .button:hover {
     background-color: #3498DB;
+}
+/* #usecase {
+    color: #ffffff;
+}
+.descriptionSection {
+    color: #ffffff;
 } */
 
 /* #feature {
     background-color: #2b3137;
-    color: #fff;
+    color: #ffffff;
 }
 .featureCallout {
     background-color: #2b3137;
-    color: #fff;
+    color: #ffffff;
     padding: 0;
 }
 .productShowcaseSection {
     background-color: #2b3137;
-    color: #fff;
+    color: #ffffff;
     padding: 0;
 }
 .paddingBottom {
     background-color: #2b3137;
-    color: #fff;
+    color: #ffffff;
     padding: 0;
 } */
 .nav-footer {
     background-color: #2b3137;
-    border-top: solid 1px #fff;
+    border-top: solid 1px #ffffff;
 }
 
 /* css for doc page */
@@ -114,7 +124,7 @@ a {
     color: #ffffff!important;
 }
 .tab-container .tab-nav {
-    background:#fff;
+    background:#ffffff;
 }
 .tab-container .tab-nav strong {
     display: inline-block;
@@ -135,7 +145,7 @@ a {
 .tab-container .tab-session pre {
     margin: 0;
     border-top: 1px solid #E1F5FE;
-    background-color: #fff;
+    background-color: #ffffff;
     display: none;
 }
 .tab-container .tab-session pre.active {
@@ -214,7 +224,7 @@ a {
         color: #ffffff!important;
     }
     .tab-container .tab-nav {
-        background:#fff;
+        background:#ffffff;
     }
     .tab-container .tab-nav strong {
         display: inline-block;
@@ -235,7 +245,7 @@ a {
     .tab-container .tab-session pre {
         margin: 0;
         border-top: 1px solid #E1F5FE;
-        background-color: #fff;
+        background-color: #ffffff;
         display: none;
     }
     .tab-container .tab-session pre.active {

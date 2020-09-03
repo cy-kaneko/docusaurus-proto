@@ -11,9 +11,6 @@
     "crowdin-download": "crowdin --config ../crowdin.yaml download -b master"
   },
   "devDependencies": {
-    "@cybozu/eslint-config": "^11.0.0",
-    "docusaurus": "^1.14.5",
-    "eslint": "^7.6.0",
-    "prettier": "^2.0.5"
+    "docusaurus": "^1.14.5"
   }
 }

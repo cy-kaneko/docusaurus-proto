@@ -2,7 +2,7 @@ const renderToPlaceHolder = (divID, code) => {
   return `
     <script id="${divID}-script">
       (function() {
-        eval("${code.replace(/\n/g,'')}")
+        eval("${code.replace(/\n/g, "")}")
         if (typeof kucContainer !== 'undefined') {
           document.getElementById('${divID}').append(kucContainer)
         }
@@ -14,10 +14,10 @@ const renderToPlaceHolder = (divID, code) => {
       })()
     </script>
   `;
-}
+};
 
 const KUCComponentRenderer = (md) => {
-  md.renderer.rules.fence_custom.KUCComponentRenderer = function(
+  md.renderer.rules.fence_custom.KUCComponentRenderer = function (
     tokens,
     idx,
     options,
@@ -25,13 +25,15 @@ const KUCComponentRenderer = (md) => {
     self
   ) {
     try {
-      let param = JSON.parse(tokens[idx].params.split(' ')[1])
-      return `<div class='kuc-preview' id=${param.id}></div>${renderToPlaceHolder(param.id, tokens[idx].content)}`
+      const param = JSON.parse(tokens[idx].params.split(" ")[1]);
+      return `<div class='kuc-preview' id=${
+        param.id
+      }></div>${renderToPlaceHolder(param.id, tokens[idx].content)}`;
     } catch (error) {
-      console.log(error)
-      return ''
+      console.log(error);
+      return "";
     }
   };
-}
+};
 
-module.exports = {KUCComponentRenderer}
+module.exports = { KUCComponentRenderer };

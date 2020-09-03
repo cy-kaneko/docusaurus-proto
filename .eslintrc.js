@@ -1,3 +1,3 @@
 module.exports = {
-  "extends": "@cybozu"
+  extends: "@cybozu/eslint-config/presets/prettier",
 };
